@@ -4,7 +4,7 @@ const itemsCtrl = require('../controllers/items');
 const ensureLoggedIn = require('../config/ensureLoggedIn');
 
 // All routes start with '/items'
-item
+
 // GET /items (display all items)
 router.get('/', itemsCtrl.index);
 // GET /items/new (display a form for entering a new item)

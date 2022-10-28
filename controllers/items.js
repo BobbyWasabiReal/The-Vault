@@ -32,7 +32,7 @@ function show(req, res) {
 }
 
 function newItem(req, res) {
-  res.render('items/new', { title: 'Add Movie' });
+  res.render('items/new', { title: 'Add Item' });
 }
 
 function create(req, res) {
