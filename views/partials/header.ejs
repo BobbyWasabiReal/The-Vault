@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
     <nav>
-        <a href="/">The Vault</a>
-        <% if (user) { %>
-        <a href="/logout">LOG OUT</a>
-        <% } else { %>
-            <a href="/auth/google" class="login">LOG IN</a>
-        <% } %>
+        <a href="/"><img src="/images/Logo_rmbg.png" alt="Logo" id="logo"></a>
+        <a href="/"  id="title">The Vault</a>
+        <div>
+            <% if (user) { %>
+                <a href="/items" id="all-item">All Items</a>
+                <a href="/logout" class="login">Log Out</a>
+            <% } else { %>
+                <a href="/auth/google" class="login">Log In</a>
+            <% } %>
+        </div>
     </nav>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>

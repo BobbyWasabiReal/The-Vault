@@ -14,22 +14,12 @@ function index(req, res) {
 }
 
 function show(req, res) {
-  Item.findById(req.params.id)
-    .populate('cast')
-    .exec(function(err, item) {
-      Performer.find(
-        {_id: {$nin: item.cast}},
-        function(err, performers) {
-          console.log(performers);
-          res.render('items/show', {
-            title: 'Item Detail',
-            item,
-            performers
-          });
-        }
-      );
+  Item.findById(req.params.id);
+    res.render('items/show', {
+    title: 'Item Detail',
+    item,
     });
-}
+};
 
 function newItem(req, res) {
   res.render('items/new', { title: 'Add Item' });

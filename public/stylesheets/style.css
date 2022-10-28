@@ -1,8 +1,102 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100vh;
+  background-color: rgb(64, 64, 64);
+  font-family: 'Playfair Display', serif;
+  color: white;
+}
+
+nav {
+  margin-top: -1vmin;
+  margin-left: -1vmin;
+  margin-right: -1vmin;
+  padding-left: 2vmin;
+  background-color: rgb(93, 93, 93);
+}
+
+#login-btn {
+  height: 10vmin;
+  width: 10vmin;
+}
+
+.login {
+  text-align: center;
+  padding: 1vmin;
+  padding-bottom: 1.2vmin;
+  padding-top: 0.5vmin;
+  width: 15vmin;
+  font-size: 4vmin;
+  position: absolute;
+  top: 2.5vmin;
+  right: 3vmin;
+  border: 0.3vmin solid white;
+  border-radius: 15px;
+  transition: 200ms;
+}
+
+.login:hover {
+  text-decoration: none;
+  color: rgb(64, 64, 64);
+  border: 0.4vmin solid rgb(64, 64, 64);
+  background-color: rgb(176, 176, 176);
+}
+
+#all-item {
+  font-size: 4vmin;
+  position: absolute;
+  top: 4vmin;
+  right: 28vmin;
 }
 
 a {
-  color: #00B7FF;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+title {
+  font-size: 5vmin;
+}
+
+#title {
+  font-weight: 900;
+  position: absolute;
+  top: 1vmin;
+  left: 14.2vmin;
+  padding-top: -100vmin;
+  font-size: 8vmin;
+}
+
+#title:hover {
+  text-decoration: none;
+}
+
+#logo {
+  height: 12vmin;
+  width: 12vmin;
+}
+
+p {
+  font-size: 2.8vmin;
+  padding-left: 7vmin;
+  z-index: 900;
+}
+
+h1 {
+  font-size: 8vmin;
+  padding-left: 2vmin;
+}
+
+.sub {
+  margin-bottom: -1vmin;
+  padding-left: 4vmin;
+  font-size: 5vmin;
+}
+
+#bg {
+  position: absolute;
+  top: 50vmin;
+  z-index: 950;
 }
