@@ -3,9 +3,9 @@
 <table id="list">
     <thead>
       <tr>
-        <th>Item Name</th>
+        <th>Item Image</th>
         <th>Game</th>
-        <th></th>
+        <th>Item Name</th>
       </tr>
     </thead>
     <tbody>
@@ -13,7 +13,7 @@
         <tr>
           <td><%= i.item %></td>
           <td><%= i.game %></td>
-          <td><a href="/items/<%= i._id %>">DETAILS</a></td>
+          <td><a href="/items/<%= i._id %>"><%= i.item %></a></td>
         </tr>
         <% }); %>
       </tbody>

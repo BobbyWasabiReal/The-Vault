@@ -101,6 +101,7 @@ h1 {
 
 #home {
   position: absolute;
-  right: 30vmin;
+  top: 60vmin;
+  right: 28vmin;
   width: 125vmin;
 }
