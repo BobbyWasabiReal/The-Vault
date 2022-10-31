@@ -24,10 +24,11 @@ const reviewSchema = new Schema({
     timestamps: true
 });
 
-const movieSchema = new Schema({
+const itemSchema = new Schema({
     itemImg: {
-        // I have no clue yet type it is
-        type: String
+        // I have no clue what type it is
+        type: String,
+        required: true
     },
     item: {
         type: String,
@@ -44,7 +45,7 @@ const movieSchema = new Schema({
     itemLevel: {
         type: Number,
     },
-    Description: {
+    description: {
         type: String,
         required: true
     },
@@ -53,4 +54,4 @@ const movieSchema = new Schema({
     timestamps: true
 });
 
-module.exports = mongoose.model('Movie', movieSchema);
+module.exports = mongoose.model('Item', itemSchema);

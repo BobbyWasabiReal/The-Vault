@@ -1,0 +1,19 @@
+<%- include('../partials/header') %>
+
+<form id="new-form" action="/items" method="POST">
+    <label>Image of Item:</label>
+    <input type="text" name="itemImg">
+    <label>Item Name:</label>
+    <input type="text" name="item">
+    <label>Game:</label>
+    <input type="text" name="game">
+    <label>Item Level:</label>
+    <input type="number" name="itemLevel">
+    <label>Description:</label>
+    <input type="string" name="description">
+    <label>Are You Trading This Item?</label>
+    <input type="checkbox" name="upForTrade">
+    <input type="submit" value="Add Item">
+  </form>
+
+<%- include('../partials/footer') %>

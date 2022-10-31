@@ -3,7 +3,7 @@ const router = express.Router();
 const reviewsCtrl = require('../controllers/reviews');
 const ensureLoggedIn = require('../config/ensureLoggedIn');
 
-// All routes "starts with" / (root)
+// All routes starts with "/" (root)
 
 // POST /items/:id/reviews
 router.post('/items/:id/reviews', ensureLoggedIn, reviewsCtrl.create);
