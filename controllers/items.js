@@ -17,7 +17,7 @@ function show(req, res) {
   Item.findById(req.params.id);
     res.render('items/show', {
     title: 'Item Detail',
-    item,
+    // item,
     });
 };
 

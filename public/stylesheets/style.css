@@ -35,7 +35,7 @@ nav {
   text-decoration: none;
   color: rgb(93, 93, 93);
   border: 0.4vmin solid rgb(88, 88, 88);
-  background-color: rgb(176, 176, 176);
+  background-color: white;
 }
 
 #all-item {
@@ -122,4 +122,35 @@ input {
 #check {
   height: 3vmin;
   width: 4vmin;
+}
+
+.btn {
+  background-color: white;
+  height: 6vmin;
+  width: 20vmin;
+  font-size: 3vmin;
+  border: 0.5vmin solid rgb(58, 58, 58);
+  transition: 175ms;
+}
+
+.btn:hover {
+  background-color: rgb(58, 58, 58);
+  color: white;
+  border: 0.5vmin solid white;
+}
+
+#new-form {
+  position: absolute;
+  left: 20vmin;
+  background-color: rgb(150, 150, 150);
+  padding: 5vmin;
+  padding-left: 10vmin;
+  padding-right: 40vmin;
+  padding-bottom: 3vmin;
+  border-radius: 15px;
+}
+
+.item-img {
+  height: 15vmin;
+  width: 15vmin;
 }
