@@ -83,6 +83,10 @@ title {
   width: 12vmin;
 }
 
+label {
+  font-size: 4.5vmin;
+}
+
 p {
   font-size: 2.8vmin;
   padding-left: 7vmin;
@@ -104,4 +108,18 @@ h1 {
   top: 60vmin;
   right: 28vmin;
   width: 125vmin;
+}
+
+input {
+  font-size: 3vmin;
+  margin-bottom: 5vmin;
+  height: 5vmin;
+  width: 40vmin;
+  border: 0.8vmin solid rgb(58, 58, 58);
+  border-radius: 15px;
+}
+
+#check {
+  height: 3vmin;
+  width: 4vmin;
 }
