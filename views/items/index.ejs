@@ -3,17 +3,22 @@
 <table id="list">
     <thead>
       <tr>
-        <th>Item Image</th>
-        <th>Game</th>
-        <th>Item Name</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
       <% items.forEach(function(i) { %>
         <tr>
-          <td><img src="<%= i.itemImg %>" alt="item" class="item-img"></td>
-          <td><%= i.game %></td>
-          <td><a href="/items/<%= i._id %>"><%= i.item %></a></td>
+          <td>
+            <img src="<%= i.itemImg %>" alt="item" class="item-img"><br>
+            <%= i.game %> <br>
+            <a href="/items/<%= i._id %>"><%= i.item %></a>
+            <% if (user) { %>
+                <form action="/items/<%= i._id %>?_method=DELETE" method="POST">
+                  <button type="submit">X</button>
+                </form>
+            <% } %>
+        </td>
         </tr>
         <% }); %>
       </tbody>

@@ -4,8 +4,24 @@ module.exports = {
   index,
   show,
   new: newItem,
-  create
+  create,
+  delete: deleteItem
 };
+
+function deleteItem(req, res, next) {
+    Item.findOne({
+      'items._id': req.params.id,
+      'items.user': req.user._id
+    }).then(function(item) {
+      if (!item) return res.redirect('/items');
+      item.remove(req.params.id);
+      item.save().then(function() {
+        res.redirect('/items');
+      }).catch(function(err) {
+        return next(err);
+      });
+    });
+}
 
 function index(req, res) {
   Item.find({}, function(err, items) {
@@ -14,10 +30,12 @@ function index(req, res) {
 }
 
 function show(req, res) {
-  Item.findById(req.params.id);
-    res.render('items/show', {
-    title: 'Item Detail',
-    // item,
+    Item.findById(req.params.id)
+    .exec(function(err, item) {
+        res.render('items/show', {
+        title: 'Item Details',
+        item,
+        });
     });
 };
 

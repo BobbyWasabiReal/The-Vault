@@ -106,7 +106,7 @@ h1 {
 #home {
   position: absolute;
   top: 60vmin;
-  right: 28vmin;
+  right: 30vmin;
   width: 125vmin;
 }
 
@@ -153,4 +153,59 @@ input {
 .item-img {
   height: 15vmin;
   width: 15vmin;
+  border-radius: 15px;
+}
+
+#item-page {
+  background-color: rgb(150, 150, 150);
+  padding: 5vmin;
+  padding-left: 5vmin;
+  margin-right: 40vmin;
+  padding-bottom: 3vmin;
+  border-radius: 15px;
+  margin-left: 3vmin;
+  margin-bottom: 4vmin;
+}
+
+.details-img {
+  height: 30vmin;
+  width: 30vmin;
+  border-radius: 15px;
+}
+
+.label {
+  font-size: 6vmin;
+}
+
+.item-div {
+  font-size: 3vmin;
+}
+
+td {
+  padding-bottom: 5vmin;
+  padding-left: 8vmin;
+}
+
+textarea {
+  font-size: 3vmin;
+  margin-bottom: 5vmin;
+  border: 0.8vmin solid rgb(58, 58, 58);
+  border-radius: 15px;
+}
+
+#reviews {
+  padding-bottom: 10vmin;
+  padding-left: 10vmin;
+}
+
+select {
+  font-size: 3vmin;
+  border: 0.8vmin solid rgb(58, 58, 58);
+  border-radius: 15px;
+}
+
+.user {
+  height: 10vmin;
+  width: 10vmin;
+  border-radius: 50%;
 }

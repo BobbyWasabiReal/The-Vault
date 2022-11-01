@@ -13,5 +13,7 @@ router.get('/new', ensureLoggedIn, itemsCtrl.new);
 router.get('/:id', itemsCtrl.show);
 // POST /items (handle the new form being submitted)
 router.post('/', ensureLoggedIn, itemsCtrl.create);
+// DELETE /items/:id
+router.delete('/:id', ensureLoggedIn, itemsCtrl.delete);
 
 module.exports = router;

@@ -4,22 +4,21 @@ const Schema = mongoose.Schema;
 
 const reviewSchema = new Schema({
     content: {
-    type: String,
-    required: true
+        type: String,
+        required: true
     },
     rating: {
-    type: Number,
-    min: 1,
-    max: 10,
-    default: 10
+        type: Number,
+        min: 1,
+        max: 10,
     },
     user: {
-    type: Schema.Types.ObjectId,
-    ref: 'User',
-    required: true
+        type: Schema.Types.ObjectId,
+        ref: 'User',
+        required: true
     },
-    userName: String,
-    userAvatar: String
+        userName: String,
+        userAvatar: String
     }, {
     timestamps: true
 });
@@ -49,9 +48,14 @@ const itemSchema = new Schema({
         type: String,
         required: true
     },
-    reviews: [reviewSchema]
-    }, {
-    timestamps: true
+    reviews: [reviewSchema],
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: 'User',
+        // required: true
+    },
+        userName: String,
+        userAvatar: String
 });
 
 module.exports = mongoose.model('Item', itemSchema);
