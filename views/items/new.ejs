@@ -1,6 +1,5 @@
 <%- include('../partials/header') %>
 
-<% if (user) { %>
 <form id="new-form" action="/items" method="POST">
     <label>Image of Item:</label>
     <p>(please submit a link)</p>
@@ -16,6 +15,6 @@
     <label>Are You Trading This Item?</label>
     <input type="checkbox" name="upForTrade" id="check"> <br>
     <input type="submit" value="Add Item" class="btn">
-  </form>
-<% } %>
+</form>
+
 <%- include('../partials/footer') %>

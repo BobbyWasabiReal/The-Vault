@@ -9,18 +9,13 @@ module.exports = {
 };
 
 function deleteItem(req, res, next) {
-    Item.findOne({
-      'items._id': req.params.id,
-      'items.user': req.user._id
-    }).then(function(item) {
-      if (!item) return res.redirect('/items');
-      item.remove(req.params.id);
-      item.save().then(function() {
-        res.redirect('/items');
-      }).catch(function(err) {
-        return next(err);
-      });
-    });
+    Item.findOneAndDelete({
+      '._id': req.params.id,
+      'user': req.user
+    }, function(err) {
+        res.redirect('/items')
+    }
+    );
 }
 
 function index(req, res) {
@@ -44,6 +39,9 @@ function newItem(req, res) {
 }
 
 function create(req, res) {
+    req.body.user = req.user._id
+    req.body.userName = req.user.name
+    req.body.userAvatar = req.user.avatar
   // Convert upForTrade's checkbox of nothing or "on" to boolean
   req.body.upForTrade = !!req.body.upForTrade;
   // Delete empty properties on req.body for defaults to happen 
