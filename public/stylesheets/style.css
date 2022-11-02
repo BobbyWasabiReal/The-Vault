@@ -90,6 +90,7 @@ label {
 p {
   font-size: 2.8vmin;
   padding-left: 7vmin;
+  width: 75vmin;
 }
 
 h1 {
@@ -105,9 +106,9 @@ h1 {
 
 #home {
   position: absolute;
-  top: 60vmin;
-  right: 30vmin;
-  width: 125vmin;
+  top: 34vmin;
+  right: 0vmin;
+  width: 90vmin;
 }
 
 input {
@@ -208,4 +209,29 @@ select {
   height: 10vmin;
   width: 10vmin;
   border-radius: 50%;
+}
+
+.home-login {
+  padding: 2vmin;
+  padding-left: 17vmin;
+  padding-right: 15vmin;
+  color: black;
+  background-color: white;
+  position: absolute;
+  left: 20vmin;
+  font-size: 3vmin;
+  border-radius: 15px;
+  transition: 150ms;
+}
+
+.home-login:hover {
+  text-decoration: none;
+  transform: scale(1.12);
+}
+
+#google {
+  width: 4vmin;
+  position: absolute;
+  left: 12.5vmin;
+  top: 1.6vmin;
 }
