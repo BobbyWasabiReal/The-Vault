@@ -98,6 +98,20 @@ h1 {
   padding-left: 2vmin;
 }
 
+h2 {
+  font-size: 5vmin;
+}
+
+h3 {
+  font-size: 3.5vmin;
+}
+
+h4 {
+  font-size: 3vmin;
+  padding: 4vmin;
+  margin-top: -3vmin;
+}
+
 .sub {
   margin-bottom: -1vmin;
   padding-left: 4vmin;
@@ -106,9 +120,9 @@ h1 {
 
 #home {
   position: absolute;
-  top: 34vmin;
-  right: 0vmin;
-  width: 90vmin;
+  top: 32vmin;
+  right: -2vmin;
+  width: 95vmin;
 }
 
 input {
@@ -160,15 +174,16 @@ input {
 #item-page {
   background-color: rgb(150, 150, 150);
   padding: 5vmin;
-  padding-left: 5vmin;
+  padding-left: 8vmin;
   margin-right: 40vmin;
-  padding-bottom: 3vmin;
+  padding-bottom: 7vmin;
   border-radius: 15px;
-  margin-left: 3vmin;
+  margin-left: 10vmin;
   margin-bottom: 4vmin;
 }
 
 .details-img {
+  margin-top: 2vmin;
   height: 30vmin;
   width: 30vmin;
   border-radius: 15px;
@@ -201,8 +216,9 @@ textarea {
 
 select {
   font-size: 3vmin;
-  border: 0.8vmin solid rgb(58, 58, 58);
+  border: 0.5vmin solid rgb(58, 58, 58);
   border-radius: 15px;
+  margin-left: 1.2vmin;
 }
 
 .user {
@@ -234,4 +250,76 @@ select {
   position: absolute;
   left: 12.5vmin;
   top: 1.6vmin;
+}
+
+#review-form {
+  margin-top: -3vmin;
+  margin-left: 12vmin;
+  background-color: rgb(150, 150, 150);
+  border-radius: 15px;
+  padding: 3vmin;
+  padding-left: 5vmin;
+  width: 100vmin;
+}
+
+#coins {
+  display: inline;
+  width: 8vmin;
+  margin-bottom: -1.2vmin;
+}
+
+#total-coins {
+  width: 8vmin;
+  margin-bottom: -0.8vmin;
+  margin-left: -0.5vmin;
+}
+
+#total {
+  margin-left: -2vmin;
+}
+
+.delete {
+  color: white;
+  background-color: rgb(207, 0, 0);
+  font-size: 2.2vmin;
+  border: 0.5vmin solid rgb(96, 0, 0);
+  border-radius: 15px;
+  transition: 175ms;
+  padding: 1vmin;
+}
+
+.delete:hover {
+  transform: scale(1.1);
+  background-color: rgb(96, 0, 0);
+  color: white;
+  border: 0.5vmin solid rgb(207, 0, 0);
+}
+
+.user-item {
+  width: 8vmin;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-size: 3.5vmin;
+}
+
+#items {
+  background-color: rgb(150, 150, 150);
+  padding: 3vmin;
+  border-radius: 15px;
+  padding-right: 40vmin;
+}
+
+#item {
+  width: 100vmin;
+}
+
+.review {
+  margin-top: -3vmin;
+  background-color: rgb(150, 150, 150);
+  padding: 2vmin;
+  padding-left: 3vmin;
+  padding-right: 50vmin;
+  border-radius: 15px;
 }

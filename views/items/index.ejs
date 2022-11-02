@@ -10,14 +10,26 @@
       <% items.forEach(function(i) { %>
         <tr>
           <td>
-            <img src="<%= i.itemImg %>" alt="item" class="item-img"><br>
-            <%= i.game %> <br>
-            <a href="/items/<%= i._id %>"><%= i.item %></a>
-            <% if (user?._id.equals(i.user)) { %>
-                <form action="/items/<%= i._id %>?_method=DELETE" method="POST">
-                  <button type="submit">X</button>
-                </form>
-            <% } %>
+            <h2 class="user-name">
+                <img alt="avatar" src="<%= i.userAvatar %>" referrerpolicy="no-referrer" class="user-item"> &nbsp;<%= i.userName %>
+            </h2>
+            <div id="items">
+                <img src="<%= i.itemImg %>" alt="item" class="item-img">
+                <h3 id="item">
+                    Game: <%= i.game %> <br>
+                </h3>
+                <div class="item-div">
+                    Item Name: <a href="/items/<%= i._id %>"><%= i.item %></a>
+                </div> <br>
+                <div class="item-div">
+                    Up For Trade: <%= i.upForTrade ? 'Yes' : 'No' %>
+                </div> <br>
+                    <% if (user?._id.equals(i.user)) { %>
+                        <form action="/items/<%= i._id %>?_method=DELETE" method="POST">
+                            <button type="submit" class="delete">Delete</button>
+                        </form>
+                    <% } %>
+            </div>
         </td>
         </tr>
         <% }); %>

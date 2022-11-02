@@ -20,7 +20,7 @@ function deleteItem(req, res, next) {
 
 function index(req, res) {
   Item.find({}, function(err, items) {
-    res.render('items/index', { title: 'All items', items });
+    res.render('items/index', { title: 'All Items', items });
   });
 }
 

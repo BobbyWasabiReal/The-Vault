@@ -13,7 +13,7 @@
     <div class="item-div"><%= item.upForTrade ? 'Yes' : 'No' %></div> <br>
     <label class="label">Description:</label>
     <div class="item-div"><%- item.description.replaceAll('\n', '<br>') %></div>
-</section> <br>
+</section>
 
 <section id="reviews">
 <h1>Reviews</h1>
@@ -22,7 +22,7 @@
     action="/items/<%= item._id %>/reviews">
     <label>Review:</label> <br>
     <textarea name="content"></textarea> <br>
-    <label>Rating:</label> <br>
+    <label >Rating:</label>
     <select name="rating">
       <option value="1">1</option>
       <option value="2">2</option>
@@ -34,7 +34,7 @@
       <option value="8">8</option>
       <option value="9">9</option>
       <option value="10" selected>10</option>
-    </select> <br> <br>
+    </select><img src="/images/Coins-rmbg.png" alt="gold Coins" id="coins"><br><br><br>
     <input type="submit" value="Add Review" class="btn">
   </form>
 <% } else { %>
@@ -43,37 +43,46 @@
 
     <% if (item.reviews.length) { %>
         <table>
-          <thead>
-            <tr>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <% let total = 0 %>
-            <% item.reviews.forEach(function(r) { %>
-              <% total += r.rating %>
+            <thead>
+                <tr>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+              <% let total = 0 %>
+              <% item.reviews.forEach(function(r) { %>
+                <% total += r.rating %>
               <tr>
                 <td>
-                    <h2><img alt="avatar" src="<%= r.userAvatar %>" referrerpolicy="no-referrer" class="user"><%= r.userName %></h2> <br>
-                    <%= r.createdAt.toLocaleDateString() %> <br>
-                    <h2><%= r.content %></h2>
-                    <%= r.rating %> <br>
+                    <h2>
+                        <img alt="avatar" src="<%= r.userAvatar %>" referrerpolicy="no-referrer" class="user"> &nbsp;<%= r.userName %>
+                    </h2> <br>
+                    <div class="review">
+                        <%= r.createdAt.toLocaleDateString() %>
+                        <h2>
+                            <%= r.content %>
+                        </h2>
+                        <h3>
+                            <%= r.rating %> <img src="/images/Coins-rmbg.png" alt="gold Coins" id="coins">
+                        </h3>
+                    </div> <br>
                     <% if (user?._id.equals(r.user)) { %>
-                      <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
-                        <button type="submit">X</button>
-                      </form>
-                    <% } %>
+                        <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
+                          <button type="submit" class="delete" id="delete-review">Delete</button>
+                        </form>
+                      <% } %>
+                    <br>
                 </td>
               </tr>
             <% }); %>
             <tr>
-              <td colspan="2"></td>
-              <td>
-                <strong>
-                  Total Score: <%= total %>
-                </strong>
-              </td>
-            </tr>
+                <td colspan="2"></td>
+                <td>
+                  <h2 id="total">
+                   Total Coins: <%= total %> <img src="/images/Coins-rmbg.png" alt="gold Coins" id="total-coins">
+                  </h2>
+                </td>
+              </tr>
           </tbody>
         </table>
       <% } else { %>
