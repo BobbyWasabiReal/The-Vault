@@ -295,6 +295,12 @@ select {
   border: 0.5vmin solid rgb(207, 0, 0);
 }
 
+#delete-review {
+  font-size: 3vmin;
+  margin-left: 8vmin;
+  width: 15vmin;
+}
+
 .user-item {
   width: 8vmin;
   border-radius: 50%;
@@ -322,4 +328,5 @@ select {
   padding-left: 3vmin;
   padding-right: 50vmin;
   border-radius: 15px;
+  margin-left: 8vmin;
 }
