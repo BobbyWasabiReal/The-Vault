@@ -24,9 +24,7 @@
 
   |   Description | Screenshot | 
   |:-------------:| -----------|
-  | <h3>Home Page</h3> | <img src="https://i.imgur.com/YpzFWEH.png"
-    width="700"
-  /> |
+  | <h3>Home Page</h3> | <img src="https://i.imgur.com/YpzFWEH.png" width="700"/> |
   | <h3>Items Page</h3> | <img src="https://i.imgur.com/sa46pzE.png"
   width="700"
   /> |
