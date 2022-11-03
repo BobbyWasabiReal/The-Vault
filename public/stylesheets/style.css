@@ -121,7 +121,7 @@ h4 {
 #home {
   position: absolute;
   top: 32vmin;
-  right: -2vmin;
+  right: 0vmin;
   width: 95vmin;
 }
 
