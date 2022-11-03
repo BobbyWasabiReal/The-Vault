@@ -62,10 +62,11 @@
                     </h2> <br>
                     <div class="review">
                         <%= r.createdAt.toLocaleDateString() %>
-                        <h2>
-                            <%- r.content.replaceAll('\n', '<br>') %>
-                        </h2>
                         <h3>
+                            <%- r.content.replaceAll('\n', '<br>') %>
+                        </h3>
+                        <h3>
+                            Rating:
                             <%= r.rating %> <img src="/images/Coins-rmbg.png" alt="gold Coins" id="coins">
                         </h3>
                     </div> <br>
