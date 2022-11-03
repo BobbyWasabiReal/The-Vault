@@ -1,6 +1,6 @@
 <div id="header" align="center">
 
-  <img src="https://i.imgur.com/46WOLTy.png" width="800" height="300">
+  <img src="https://i.imgur.com/46WOLTy.png" width="800" height="350">
 
 </div>
 
@@ -55,7 +55,7 @@
         1. Log In with Google.
     </li>
     <li>
-        2. Click "Add An Item" at the topof the page.
+        2. Click "Add An Item" at the top of the page.
     </li>
     <li>
         3. Fill out the form, then click "Add Item".
