@@ -1,6 +1,6 @@
 <div id="header" align="center">
 
-  <img src="https://i.imgur.com/46WOLTy.png" width="800" height="400">
+  <img src="https://i.imgur.com/46WOLTy.png" width="800" height="300">
 
 </div>
 
@@ -12,7 +12,7 @@
 
   ##### Gabriel (Bobby) Covaci
 
-  [![LinkedIn Badge](https://img.shields.io/badge/-@profpan396-blue?style=flat&logo=Linkedin&logoColor=black)](https://www.linkedin.com/in/gabriel-bobby-covaci-a1a308254/)
+  [![LinkedIn Badge](https://img.shields.io/badge/-GabrielCovaci-blue?style=flat&logo=Linkedin&logoColor=black)](https://www.linkedin.com/in/gabriel-bobby-covaci-a1a308254/)
 
   ## :pencil: Description :pencil:
 
@@ -29,4 +29,55 @@
   | <h3>Add Item Page 1/2</h3> | <img src="https://i.imgur.com/IdzGc4g.png" width="700"/> |
   | <h3>Add Item Page 2/2</h3> | <img src="https://i.imgur.com/kIqXAHN.png" width="700" /> |
   | <h3>Reviews Form</h3> | <img src="https://i.imgur.com/z3TYzOI.png" width="700"/> |
-  | <h3>Reviews</h3> | <img src="https://i.imgur.com/I0enZcj.png" width="700" /> |
+  | <h3>Review</h3> | <img src="https://i.imgur.com/I0enZcj.png" width="700" /> |
+
+  ## :computer: Technologies Used :computer:
+
+  ![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat&logo=mongodb)
+  ![Express](https://img.shields.io/badge/-Express-05122A?style=flat&logo=express)
+  ![Node](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js)
+  ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)
+  ![HTML5](https://img.shields.io/badge/-HTML5-05122A?style=flat&logo=html5)
+  ![CSS3](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=css3)
+  ![Trello](https://img.shields.io/badge/-Trello-05122A?style=flat&logo=trello)
+  ![Heroku](https://img.shields.io/badge/-Heroku-05122A?style=flat&logo=heroku)
+  ![Canva](https://img.shields.io/badge/-Canva-05122A?style=flat&logo=canva)
+  ![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git)
+  ![Github](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)
+  ![VSCode](https://img.shields.io/badge/-VS_Code-05122A?style=flat&logo=visualstudio)
+
+  ## :fire: Getting Started
+
+<details open>
+  <summary> How to Create an Item Post </summary>
+    1. Log In with Google.
+    2. Click "Add An Item" at the topof the page.
+    3. Fill out the form, then click "Add Item".
+</details>
+
+<details open>
+  <summary> How to Rate/Review Others' Posts </summary>
+    1. Click on the Item's name while on the "All Items" page.
+    2. Once you are on an Item Post, scroll down towards the bottom of the page.
+    3. Create a review and give a rating of 1-10 gold coins, then click "Create Review"!
+</details>
+
+<details>
+  <summary> Trello Board </summary>
+  <a href="https://trello.com/b/bxpCoown/the-vault"> 
+  https://trello.com/b/bxpCoown/the-vault
+  </a>
+</details>
+
+<details open>
+  <summary> Deployed Link (Heroku) </summary>
+  <a href="https://the-vault-wasabi.herokuapp.com/"> 
+  https://the-vault-wasabi.herokuapp.com
+  </a>
+</details>
+
+## :satellite: Upcoming Features
+
+- [:star:] AAU, when I'm at the "Items" page, I would like to search for the name of an Item and be given the closest result.
+
+- [:x:] AAU, when I'm on a device smaller than a desktop, I'd like the site to be formatted properly.
