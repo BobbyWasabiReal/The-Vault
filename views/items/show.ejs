@@ -47,7 +47,7 @@
                     <option value="9">9</option>
                     <option value="10" selected>10</option>
                 </select><img src="/images/Coins-rmbg.png" alt="gold Coins" id="coins"><br><br><br>
-                <input type="submit" value="Add Review" class="btn">
+                <input type="submit" value="Create Review" class="btn">
             </form>
             <% } else { %>
                 <h2>Sign in to make reviews.</h2>
@@ -78,15 +78,13 @@
                                                             </h3>
                                                             <h3>
                                                                 Rating:
-                                                                <%= r.rating %> <img src="/images/Coins-rmbg.png"
-                                                                        alt="gold Coins" id="coins">
+                                                                <%= r.rating %> <img src="/images/Coins-rmbg.png" alt="gold Coins" id="coins">
                                                             </h3>
                                                     </div> <br>
                                                     <% if (user?._id.equals(r.user)) { %>
                                                         <form action="/reviews/<%= r._id %>?_method=DELETE"
                                                             method="POST">
-                                                            <button type="submit" class="delete"
-                                                                id="delete-review">Delete</button>
+                                                            <button type="submit" class="delete" id="delete-review">Delete</button>
                                                         </form>
                                                         <% } %>
                                                             <br>
@@ -97,8 +95,7 @@
                                                     <td colspan="2"></td>
                                                     <td>
                                                         <h2 id="total">
-                                                            Total Coins: <%= total %> <img src="/images/Coins-rmbg.png"
-                                                                    alt="gold Coins" id="total-coins">
+                                                            Total Coins: <%= total %> <img src="/images/Coins-rmbg.png" alt="gold Coins" id="total-coins">
                                                         </h2>
                                                     </td>
                                                 </tr>
