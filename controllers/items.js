@@ -34,7 +34,7 @@ function deleteItem(req, res, next) {
       '._id': req.params.id,
       'user': req.user
     }, function(err) {
-        res.redirect('/items')
+        res.redirect('/items');
     }
     );
 }
