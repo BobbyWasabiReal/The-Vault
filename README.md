@@ -12,7 +12,7 @@
 
   ##### Gabriel (Bobby) Covaci
 
-  [![LinkedIn Badge](https://img.shields.io/badge/-GabrielCovaci-blue?style=flat&logo=Linkedin&logoColor=black)](https://www.linkedin.com/in/gabriel-bobby-covaci-a1a308254/)
+  [![LinkedIn Badge](https://img.shields.io/badge/-@GabrielCovaci-blue?style=flat&logo=Linkedin&logoColor=black)](https://www.linkedin.com/in/gabriel-bobby-covaci-a1a308254/)
 
   ## Description :book:
 
