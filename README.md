@@ -91,8 +91,10 @@
   </a>
 </details>
 
-## :satellite: Upcoming Features
+## Upcoming Features :satellite:
 
 - [ ] AAU, when I'm at the "Items" page, I would like to search for the name of an Item and be given the closest result.
 
 - [ ] AAU, when I'm on a device smaller than a desktop, I'd like the site to be formatted properly.
+
+- [ ] Implementing proper breakpoints for phones, tablets, desktops, and laptops.
