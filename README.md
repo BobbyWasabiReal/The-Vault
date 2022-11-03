@@ -25,22 +25,8 @@
   |   Description | Screenshot | 
   |:-------------:| -----------|
   | <h3>Home Page</h3> | <img src="https://i.imgur.com/YpzFWEH.png" width="700"/> |
-  | <h3>Items Page</h3> | <img src="https://i.imgur.com/sa46pzE.png"
-  width="700"
-  /> |
-  | <h3>Add Item Page 1/2</h3> | <img
-    src="https://i.imgur.com/IdzGc4g.png"
-    width="700"
-  /> |
-  | <h3>Add Item Page 2/2</h3> | <img
-    src="https://i.imgur.com/kIqXAHN.png"
-    width="700"
-  /> |
-  | <h3>Reviews Form</h3> | <img
-    src="https://i.imgur.com/z3TYzOI.png"
-    width="700"
-  /> |
-  | <h3>Reviews</h3> | <img
-    src="https://i.imgur.com/I0enZcj.png"
-    width="700"
-  /> |
+  | <h3>Items Page</h3> | <img src="https://i.imgur.com/sa46pzE.png" width="700" /> |
+  | <h3>Add Item Page 1/2</h3> | <img src="https://i.imgur.com/IdzGc4g.png" width="700"/> |
+  | <h3>Add Item Page 2/2</h3> | <img src="https://i.imgur.com/kIqXAHN.png" width="700" /> |
+  | <h3>Reviews Form</h3> | <img src="https://i.imgur.com/z3TYzOI.png" width="700"/> |
+  | <h3>Reviews</h3> | <img src="https://i.imgur.com/I0enZcj.png" width="700" /> |
