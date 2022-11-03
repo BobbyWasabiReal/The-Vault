@@ -368,3 +368,154 @@ select {
 #add-review {
   width: 22vmin;
 }
+
+@media (max-width: 1225px) {
+  #home {
+    position: absolute;
+    top: 35vmin;
+    right: -2vmin;
+    width: 80vmin;
+  }
+
+  #items {
+    padding-right: 25vmin;
+  }
+}
+
+@media (max-width: 1116px) {
+  #home {
+    position: absolute;
+    top: 35vmin;
+    right: -2vmin;
+    width: 70vmin;
+  }
+
+  p {
+    font-size: 2.5vmin;
+  }
+}
+
+@media (max-width: 1055px) {
+  #home {
+    position: absolute;
+    top: 85vmin;
+    left: 32.5vmin;
+    width: 80vmin;
+  }
+
+  p {
+    margin-left: 22.5vmin;
+    text-align: center;
+  }
+
+  h1 {
+    margin-left: 10vmin;
+  }
+
+  td {
+    max-width: 110vmin;
+  }
+
+  .sub {
+    margin-left: 44.5vmin;
+  }
+  
+  .home-login {
+    position: absolute;
+    left: 50vmin;
+    font-size: 3vmin;
+  }
+}
+
+@media (max-width: 890px) {
+
+  #home {
+    position: absolute;
+    top: 85vmin;
+    left: 25vmin;
+    width: 80vmin;
+  }
+
+  p {
+    margin-left: 16vmin;
+    text-align: center;
+  }
+
+  h1 {
+    margin-left: 5vmin;
+  }
+
+  td {
+    max-width: 80vmin;
+  }
+
+  .item-img {
+    margin-left: 17vmin;
+    width: 35vmin;
+    height: 35vmin;
+  }
+
+  #item-name {
+    margin-left: -16vmin;
+    font-size: 4vmin;
+    text-align: center;
+  }
+
+  div#item-post {
+    text-align: center;
+    margin-left: 14vmin;
+    width: 40vmin;
+  }
+
+  .sub {
+    margin-left: 38vmin;
+  }
+  
+  .home-login {
+    position: absolute;
+    left: 42.5vmin;
+    font-size: 3vmin;
+  }
+}
+
+@media (max-width: 780px) {
+  #home {
+    position: absolute;
+    top: 85vmin;
+    left: 16.5vmin;
+    width: 80vmin;
+  }
+
+  p {
+    margin-left: 10vmin;
+    text-align: center;
+  }
+
+  h1 {
+    margin-left: 17vmin;
+  }
+
+  .sub {
+    margin-left: 32vmin;
+  }
+  
+  .home-login {
+    position: absolute;
+    left: 36vmin;
+    font-size: 3vmin;
+  }
+
+  #all-item {
+    font-size: 3vmin;
+    position: absolute;
+    top: 5vmin;
+    right: 22vmin;
+  }
+  
+  #add-item {
+    font-size: 3vmin;
+    position: absolute;
+    top: 5vmin;
+    right: 34vmin;
+  }
+}
