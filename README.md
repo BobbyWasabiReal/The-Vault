@@ -46,22 +46,37 @@
   ![Github](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)
   ![VSCode](https://img.shields.io/badge/-VS_Code-05122A?style=flat&logo=visualstudio)
 
-  ## :fire: Getting Started
+  ## Getting Started :fire:
 
+  ### Instructions :pencil:
 <details open>
   <summary> How to Create an Item Post </summary>
-    1. Log In with Google.
-    2. Click "Add An Item" at the topof the page.
-    3. Fill out the form, then click "Add Item".
+    <li>
+        1. Log In with Google.
+    </li>
+    <li>
+        2. Click "Add An Item" at the topof the page.
+    </li>
+    <li>
+        3. Fill out the form, then click "Add Item".
+    </li>
 </details>
 
 <details open>
   <summary> How to Rate/Review Others' Posts </summary>
-    1. Click on the Item's name while on the "All Items" page.
-    2. Once you are on an Item Post, scroll down towards the bottom of the page.
-    3. Create a review and give a rating of 1-10 gold coins, then click "Create Review"!
+    <li>
+        1. Click on the Item's name while on the "All Items" page.
+    </li>
+    <li>
+        2. Once you are on an Item Post, scroll down towards the bottom of the page.
+    </li>
+    <li>
+        3. Create a review and give a rating of 1-10 Gold Coins, then click "Create Review"!
+    </li>
 </details>
 
+  ### :link: Links
+ 
 <details>
   <summary> Trello Board </summary>
   <a href="https://trello.com/b/bxpCoown/the-vault"> 
