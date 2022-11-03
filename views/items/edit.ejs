@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+
+<form id="new-form" action="/items/<%= item._id %>?_method=PUT" method="POST">
+    <label>Image of Item:</label>
+    <p>(please submit a link)</p>
+    <input type="text" name="itemImg" value="<%= item.itemImg %>"> <br>
+    <label>Item Name:</label> <br>
+    <input type="text" name="item" value="<%= item.item %>"> <br>
+    <label>Game:</label> <br>
+    <input type="text" name="game" value="<%= item.game %>"> <br>
+    <label>Item Level:</label> <br>
+    <input type="number" name="itemLevel" value="<%= item.itemLevel %>"> <br>
+    <label>Description:</label> <br>
+    <textarea type="string" name="description" value="<%= item.description %>"></textarea> <br>
+    <label>Are You Trading This Item?</label>
+    <input type="checkbox" name="upForTrade" id="check" value="<%= item.upForTrade %>"> <br>
+    <input type="submit" value="Edit Item" class="btn">
+</form>
+
+<%- include('../partials/footer') %>

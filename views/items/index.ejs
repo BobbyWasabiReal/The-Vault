@@ -11,18 +11,18 @@
         <tr>
           <td>
             <h2 class="user-name">
-                <img alt="avatar" src="<%= i.userAvatar %>" referrerpolicy="no-referrer" class="user-item"> &nbsp;<%= i.userName %>
+                <img alt="avatar" src="<%= i.userAvatar %>" referrerpolicy="no-referrer" class="item-user"> &nbsp;<%= i.userName %>
             </h2>
             <div id="items">
-                <img src="<%= i.itemImg %>" alt="item" class="item-img">
-                <h3 id="item">
-                    Game: <%= i.game %> <br>
+                <h3 id="item-name">
+                    <a href="/items/<%= i._id %>"><%= i.item %></a>
                 </h3>
-                <div class="item-div">
-                    Item Name: <a href="/items/<%= i._id %>"><%= i.item %></a>
+                <img src="<%= i.itemImg %>" alt="item" class="item-img"> <br><br>
+                <div class="item-div" id="item-post">
+                    Game: &nbsp; <%= i.game %> <br>
                 </div> <br>
-                <div class="item-div">
-                    Up For Trade: <%= i.upForTrade ? 'Yes' : 'No' %>
+                <div class="item-div" id="item-post">
+                    Up For Trade: &nbsp; <%= i.upForTrade ? 'Yes' : 'No' %>
                 </div> <br>
                     <% if (user?._id.equals(i.user)) { %>
                         <form action="/items/<%= i._id %>?_method=DELETE" method="POST">

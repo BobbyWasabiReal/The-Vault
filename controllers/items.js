@@ -5,8 +5,29 @@ module.exports = {
   show,
   new: newItem,
   create,
-  delete: deleteItem
+  delete: deleteItem,
+  edit: editItem,
+  updateItem
 };
+
+function editItem(req, res) {
+    Item.findOne({_id: req.params.id, user: req.user._id}, function(err, item) {
+        if (err || !item) return res.redirect('/items');
+        res.render('items/edit', { title: 'Edit Item', item} );
+    });
+}
+
+function updateItem(req, res) {
+    Item.findOneAndUpdate({
+        _id: req.params.id,  user: req.user._id
+    },
+    req.body,
+    {new: true},
+    function(err, item) {
+        if(err || !item) return res.redirect('/items');
+        res.redirect(`/items/${item._id}`);
+    });
+}
 
 function deleteItem(req, res, next) {
     Item.findOneAndDelete({

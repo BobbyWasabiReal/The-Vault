@@ -145,6 +145,7 @@ input {
   width: 20vmin;
   font-size: 3vmin;
   border: 0.5vmin solid rgb(58, 58, 58);
+  border-radius: 15px;
   transition: 175ms;
 }
 
@@ -166,9 +167,15 @@ input {
 }
 
 .item-img {
-  height: 15vmin;
-  width: 15vmin;
+  margin-top: -1vmin;
+  margin-left: 5vmin;
+  height: 28vmin;
+  width: 28vmin;
   border-radius: 15px;
+}
+
+#list {
+  margin-top: -2vmin;
 }
 
 #item-page {
@@ -275,7 +282,7 @@ select {
 }
 
 #total {
-  margin-left: -2vmin;
+  margin-left: -40vmin;
 }
 
 .delete {
@@ -301,7 +308,7 @@ select {
   width: 15vmin;
 }
 
-.user-item {
+.item-user {
   width: 8vmin;
   border-radius: 50%;
 }
@@ -315,9 +322,12 @@ select {
   padding: 3vmin;
   border-radius: 15px;
   padding-right: 40vmin;
+  margin-left: 5vmin;
 }
 
-#item {
+#item-name {
+  font-size: 5vmin;
+  margin-top: -0.8vmin;
   width: 100vmin;
 }
 
@@ -329,4 +339,27 @@ select {
   padding-right: 50vmin;
   border-radius: 15px;
   margin-left: 8vmin;
+}
+
+#item-post {
+  margin-left: 3vmin;
+}
+
+#edit {
+  color: rgb(58, 58, 58);
+  text-decoration: none;
+  border: 0.5vmin solid rgb(58, 58, 58);
+  border-radius: 15px;
+  background-color: rgb(219, 219, 219);
+  padding: 0.5vmin;
+  font-size: 3vmin;
+  border-radius: 15px;
+  transition: 175ms;
+}
+
+#edit:hover {
+  color: rgb(219, 219, 219);
+  border: 0.5vmin solid rgb(219, 219, 219);
+  background-color: rgb(58, 58, 58);
+  font-size: 4vmin;
 }

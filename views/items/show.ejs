@@ -13,6 +13,9 @@
     <div class="item-div"><%= item.upForTrade ? 'Yes' : 'No' %></div> <br>
     <label class="label">Description:</label>
     <div class="item-div"><%- item.description.replaceAll('\n', '<br>') %></div>
+    <% if (user?._id.equals(item.user)) { %> <br><br>
+        <a href="/items/<%= item._id %>/edit" id="edit">Edit Item</a>
+    <% } %>
 </section>
 
 <section id="reviews">
@@ -60,7 +63,7 @@
                     <div class="review">
                         <%= r.createdAt.toLocaleDateString() %>
                         <h2>
-                            <%= r.content %>
+                            <%- r.content.replaceAll('\n', '<br>') %>
                         </h2>
                         <h3>
                             <%= r.rating %> <img src="/images/Coins-rmbg.png" alt="gold Coins" id="coins">

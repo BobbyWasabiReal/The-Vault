@@ -13,6 +13,10 @@ router.get('/new', ensureLoggedIn, itemsCtrl.new);
 router.get('/:id', itemsCtrl.show);
 // POST /items (handle the new form being submitted)
 router.post('/', ensureLoggedIn, itemsCtrl.create);
+// GET /items/:id/edit
+router.get('/:id/edit', ensureLoggedIn, itemsCtrl.edit);
+// PUT /items/:id
+router.put('/:id', ensureLoggedIn, itemsCtrl.updateItem);
 // DELETE /items/:id
 router.delete('/:id', ensureLoggedIn, itemsCtrl.delete);
 
