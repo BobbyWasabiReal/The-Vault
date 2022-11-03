@@ -20,7 +20,7 @@
 
 </div>
 
-  ## :camera_flash: Screenshots 
+  ## Screenshots :camera_flash:
 
   |   Description | Screenshot | 
   |:-------------:| -----------|
