@@ -24,11 +24,10 @@
 
   |   Description | Screenshot | 
   |:-------------:| -----------|
-  | <h3>Home Page</h3> | <img
-    src="https://i.imgur.com/YpzFWEH.png"
+  | <h3>Home Page</h3> | <img src="https://i.imgur.com/YpzFWEH.png"
     width="700"
   /> |
-  | <h3 align="center">Items Page</h3> | <img src="https://i.imgur.com/sa46pzE.png"
+  | <h3>Items Page</h3> | <img src="https://i.imgur.com/sa46pzE.png"
   width="700"
   /> |
   | <h3>Add Item Page 1/2</h3> | <img
