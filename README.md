@@ -77,7 +77,7 @@
 
   ### Links :link:
  
-<details>
+<details open>
   <summary> Trello Board </summary>
   <a href="https://trello.com/b/bxpCoown/the-vault"> 
   https://trello.com/b/bxpCoown/the-vault
