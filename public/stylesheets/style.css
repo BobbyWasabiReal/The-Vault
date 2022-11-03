@@ -140,7 +140,7 @@ input {
 }
 
 .btn {
-  background-color: white;
+  background-color: rgb(219, 219, 219);
   height: 6vmin;
   width: 20vmin;
   font-size: 3vmin;
@@ -151,8 +151,9 @@ input {
 
 .btn:hover {
   background-color: rgb(58, 58, 58);
-  color: white;
-  border: 0.5vmin solid white;
+  color: rgb(219, 219, 219);
+  transform: scale(1.1);
+  border: 0.5vmin solid rgb(219, 219, 219);
 }
 
 #new-form {
@@ -362,4 +363,8 @@ select {
   border: 0.5vmin solid rgb(219, 219, 219);
   background-color: rgb(58, 58, 58);
   font-size: 4vmin;
+}
+
+#add-review {
+  width: 22vmin;
 }
