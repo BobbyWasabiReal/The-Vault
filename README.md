@@ -14,7 +14,7 @@
 
   [![LinkedIn Badge](https://img.shields.io/badge/-GabrielCovaci-blue?style=flat&logo=Linkedin&logoColor=black)](https://www.linkedin.com/in/gabriel-bobby-covaci-a1a308254/)
 
-  ## :pencil: Description :pencil:
+  ## Description :book:
 
   The Vault is a safe site where people to share and rate their in-game items. User's can also put their items up for trade with details for trading said item in their description! You don't need items to use The Vault! You can always see and rate items others have posted.
 
@@ -75,7 +75,7 @@
     </li>
 </details>
 
-  ### :link: Links
+  ### Links :link:
  
 <details>
   <summary> Trello Board </summary>
