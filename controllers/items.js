@@ -31,12 +31,11 @@ function updateItem(req, res) {
 
 function deleteItem(req, res, next) {
     Item.findOneAndDelete({
-      '._id': req.params.id,
-      'user': req.user
+      _id: req.params.id,
+      user: req.user._id
     }, function(err) {
         res.redirect('/items');
-    }
-    );
+    });
 }
 
 function index(req, res) {
